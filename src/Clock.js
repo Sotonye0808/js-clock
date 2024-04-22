@@ -113,7 +113,7 @@ const Clock = () => {
       <button onClick={toggleMode} className="mode-toggle">
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
-      <audio id="beep" ref={audioRef} src="https://www.soundjay.com/button/beep-07.wav" />
+      <audio id="beep" ref={audioRef} src={process.env.PUBLIC_URL + "/ping.mp3"} preload="auto" />
     </div>
   );
 };
